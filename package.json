@@ -8,7 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "deploy": "sls deploy"
+    "deploy": "sls deploy",
+    "invoke": "sls invoke -f testFunction -l",
+    "logs": "sls logs -f testFunction"
   },
   "devDependencies": {
     "serverless": "^3.26.0"

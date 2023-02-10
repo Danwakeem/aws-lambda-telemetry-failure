@@ -25,7 +25,7 @@ const TelemetryAPIService = ({
           response.end('OK');
           const data = JSON.parse(body);
           // Print all telemetry events
-          console.log(JSON.stringify(data));
+          console.log(`⚡️ TELEMETRY: ${JSON.stringify(data)}`);
 
           for (const event of data) {
             if (event.type === 'platform.runtimeDone') {
